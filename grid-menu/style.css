@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap');
+
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+@keyframes slideRight {
+  0% {transform: scale(1,1,1)} 100% {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {transform: scale(1,1,1)} 100% {
+    transform: scaleY(0);
+  }
+}
+
+.gallery {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.item {
+  text-align: center;
+  -webkit-writing-mode: vertical-lr;
+  font-size: 1.2rem;
+}
+
+.menu-item-one {
+  background-color: rgb(127,29,29);
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.menu-item-one::after {
+  z-index:100;
+  content: "";
+  background-color: rgb(255,255,255);
+  width: 100px;
+  height: 50px;
+  bottom: 0;
+  left: 0px;
+  position: absolute;
+  transform-origin: 100% 100%;
+  animation: slideRight 0.1s linear forwards;
+}
+
+.menu-item-two {
+  background-color: rgb(153 27 27);
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+} 
+
+.menu-item-three {
+  background-color: rgb(185 28 28);
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+}
+
+.menu-item-three::after {
+  z-index:100;
+  content: "";
+  background-color: rgb(255,255,255);
+  width: 100px;
+  height: 50px;
+  bottom: 0;
+  left: 0px;
+  position: absolute;
+  transform-origin: 100% 0%;
+  animation: slideUp 0.1s linear forwards;
+  animation-delay: 0.1s;
+}
+
+.menu-item-four {
+  background-color: rgb(220 38 38);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+}
+.menu-item-four::after {
+  z-index:100;
+  content: "";
+  background-color: rgb(255,255,255);
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  left: 0px;
+  position: absolute;
+  transform-origin: 100% 100%;
+  animation: slideRight 0.1s linear forwards;
+  animation-delay: 0.2s;
+}
+.menu-item-five {
+  background-color: rgb(239 68 68);
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  bottom: 100px;
+  left: 0px;
+}
+.menu-item-five::after {
+  z-index:100;
+  content: "";
+  background-color: rgb(255,255,255);
+  width: 200px;
+  height: 100px;
+  bottom: 0;
+  left: 0px;
+  position: absolute;
+  transform-origin: 100% 0%;
+  animation: slideUp 0.1s linear forwards;
+  animation-delay: 0.3s;
+}
+.menu-item-six {
+  background-color: rgb(248 113 113);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+}
+.menu-item-six::after {
+  z-index:100;
+  content: "";
+  background-color: rgb(255,255,255);
+  width: 200px;
+  height: 200px;
+  bottom: 0;
+  left: 0px;
+  position: absolute;
+  transform-origin: 100% 100%;
+  animation: slideRight 0.1s linear forwards;
+  animation-delay: 0.4s;
+}
+.menu-item-seven {
+  background-color: rgb(252 165 165);
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+}
+.menu-item-seven::after {
+  z-index:100;
+  content: "";
+  background-color: rgb(255,255,255);
+  width: 400px;
+  height: 200px;
+  bottom: 0;
+  left: 0px;
+  position: absolute;
+  transform-origin: 100% 0%;
+  animation: slideUp 0.1s linear forwards;
+  animation-delay: 0.5s;
+}
+.menu-item-eight {
+  background-color: rgb(254 202 202);
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  bottom: 0;
+  left: 400px;
+}
+.menu-item-eight::after {
+  z-index:100;
+  content: "";
+  background-color: rgb(255,255,255);
+  width: 400px;
+  height: 400px;
+  bottom: 0;
+  left: 0px;
+  position: absolute;
+  transform-origin: 100% 100%;
+  animation: slideRight 0.1s linear forwards;
+  animation-delay: 0.6s;
+}
+.menu-item-nine {
+  background-color: rgb(254 226 226);
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  bottom: 400px;
+  left: 0;
+}
+.menu-item-nine::after {
+  z-index:100;
+  content: "";
+  background-color: rgb(255,255,255);
+  width: 800px;
+  height: 400px;
+  bottom: 0;
+  left: 0px;
+  position: absolute;
+  transform-origin: 100% 0%;
+  animation: slideUp 0.1s linear forwards;
+  animation-delay: 0.7s;
+}
+
+.item:hover {
+  text-decoration-line: line-through;
+}
