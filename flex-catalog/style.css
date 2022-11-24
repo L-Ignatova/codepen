@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {box-sizing:border-box}
+body {margin: 0}
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.gallery {
+  width: 90%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  transform: translate(0, 50%);
+}
+
+.card {
+  margin: 5px;
+  flex-grow: 1;
+  max-width: 60px;
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  transition: 0.3s linear;
+  overflow: hidden;
+  box-shadow: inset 0 0px 50px rgb(0,0,0,0.5);
+  display: flex;
+  align-items: flex-end;
+}
+p {
+  opacity: 0;
+  margin: 20px 30px;
+  transition: all 0.3s ease-in;
+}
+
+.card:hover {
+  cursor:pointer;
+}
+
+.card.active {
+  flex-grow: 10;
+  max-width: 500px;
+  box-shadow: inset 0px -10px 80px 40px rgba(0,0,0,0.75);
+}
+.card.active p {
+  opacity: 1;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.card0 {
+  background-image:url("https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+.card1 {
+  background-image:url("https://images.pexels.com/photos/3214958/pexels-photo-3214958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
+.card2 {
+  background-image:url("https://images.pexels.com/photos/3225528/pexels-photo-3225528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
+.card3 {
+  background-image:url("https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+
+}
+
+.card4 {
+  background-image:url("https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
