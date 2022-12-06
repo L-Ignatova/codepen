@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rajdhani:wght@400;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrapper::before {
+  content: "";
+  height: 100vh;
+  width: 200px;
+  position: absolute;
+  background-color: rgba(0,105,0,0.2);
+  top: 0;
+  left: 300px;
+}
+
+.clip-container-one {
+  width: 210px;
+  height: 210px;
+  position: relative;
+  top: 100px;
+  left: 250px;
+  clip-path: circle(40%);
+  background-color: white;
+  z-index: -100;
+}
+
+.clip-container-two {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  bottom: 100px;
+  right: -200px;
+  clip-path: circle(40%);
+  background-color: black;
+  z-index: -1000;
+}
+
+.clip-one {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  clip-path: circle(40%);
+  background: url("https://images.pexels.com/photos/1387170/pexels-photo-1387170.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat;
+  filter: grayscale(100%);
+  background-size: 150%;
+}
+
+.clip-two {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  clip-path: circle(40%);
+  background: url("https://images.pexels.com/photos/1387170/pexels-photo-1387170.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat;
+  filter: grayscale(100%);
+  background-size: 75%;
+  background-position-x: 55px;
+  background-position-y: -5px;
+}
+
+.upper-text {
+  position: absolute;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem;
+  top: 45px;
+  left: 300px;
+  color: white;
+  line-height: 0.8;
+}
+
+.upper-text p {
+  width: 200px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.upper-text p:nth-of-type(3) {
+  font-size: 1.1rem;
+  margin-top: 7px;
+}
+
+.lower-text {
+  position: absolute;
+  font-family: 'Black Ops One', cursive;
+  font-size: 4.8rem;
+  bottom: 45px;
+  left: 0;
+  background-color: rgba(0,0,0,0.2);
+  width: 600px;
+  text-align: end;
+  padding-right: 100px;
+  color: #ebebeb;
+}
+
+.bottom-text {
+  position: absolute;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.2rem;
+  bottom: 20px;
+  left: 300px;
+  letter-spacing: 2px;
+}
+
+.bottom-text::before{
+  content: "";
+  width: 90px;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  top: 17px;
+  left: -88px;
+}
