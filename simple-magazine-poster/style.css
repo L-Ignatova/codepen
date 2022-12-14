@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Raleway:wght@800&display=swap');
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 800px;
+  width: 800px;
+  background-color: #F5F5F5;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 700px;
+  height: 100%;
+  position: relative;
+}
+
+img {
+  width: 80%;
+  height: 100%;
+  object-fit:contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.text-wrapper {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  top: 70px;
+  left: 100px;
+  z-index: 10;
+}
+
+.text {
+  font-size: 6rem;
+  letter-spacing: -7px;
+  line-height: 0.75;
+  margin-bottom: 5px;
+}
+.subtitle {
+  width: 65%;
+  margin: 0;
+  font-size: 1.3rem;
+}
+.note {
+  position: absolute;
+  bottom: -20px;
+  left: 160px;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8rem;
+}
+span {
+  font-family: inherit;
+  font-size: inherit;
+  font-style:italic;
+}
