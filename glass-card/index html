@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+<body>
+  <section>
+  <div class="heart"><i class="fas fa-heart"></i></div>
+    <img src="https://cdn.pixabay.com/photo/2021/04/25/02/43/milk-shake-6205399_1280.png" alt="">
+    <div class="card">
+      <h1>Shake</h1>
+      <p>$ 5.00</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet</p>
+    </div>
+    <button class="buy-btn">
+      + ADD TO CART
+    </button>
+    </div>
+  </section>
+</body>
+</html>
