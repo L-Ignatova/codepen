@@ -28,8 +28,30 @@ main {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+/*   flex-direction: column; */
+  flex-direction: row;
   align-items: center;
+}
+.menu {
+  width: 220px;
+}
+.menu>button {
+  width: 120px;
+  height: 40px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  background-color: transparent;
+  background-image:url(https://lh6.googleusercontent.com/B3GZqaB4CtIuOZqveBVoBvWZPBZQ7bkkyTEXs9kBCWaop3KXDi5GaHa_zi9Dekl_igc=w2400);
+  background-size: contain;
+  background-repeat:no-repeat;
+  transition: width 0.3s;
+  border: none;
+}
+.menu>.btn:hover {
+  color:var(--blue);
+  background-color: transparent;
+  box-shadow: none;
+  width: 140px;
 }
 
 .scene {
@@ -158,10 +180,6 @@ img {
   padding: 5px 0;
 }
 
-.buttons {
-/*   margin-right: 30px; */
-}
-
 .buttons>button {
   color: var(--whiteish-letters);
   border: 2px solid var(--blue);
@@ -188,7 +206,7 @@ button:hover {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1.5rem;
   padding-bottom: 10px;
-  
+  font-weight: 400;
 }
 .work-edu-heading>i {
   font-size: 1.2rem;
