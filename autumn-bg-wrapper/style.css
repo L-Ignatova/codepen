@@ -1,0 +1,57 @@
+:root {
+  --gray-color: #4d4d4d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: var(--gray-color);
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+  background-image: url(https://images.pexels.com/photos/14710731/pexels-photo-14710731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://lh5.googleusercontent.com/WkGyt8yUi97uzU1_zyWi1_CqRtsgDqk8RC91QzA1tX9VvelSiSdmm5MtUttN-8dzKgA=w2400);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.content {
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+  position: absolute;
+  top: 280px;
+  left: 0;
+}
+
+.content>p {
+  width: 90%;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid var(--gray-color);
+  padding: 15px 40px;
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
