@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  --background-color: rgb(255,255,255);
+  --text-color: black;
+  --sun-y: -100px;
+  --sun-x: 700px;
+  --display-sun: block;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  min-height: 500px;
+  position: relative;
+  background-color: var(--background-color);
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  padding-bottom: 200px;
+}
+
+.navigation-bar {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+
+.sun {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  top: var(--sun-y);
+  left: var(--sun-x);
+  background-color: white;
+  display: var(--display-sun);
+}
+
+.navigation-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-menu-item {
+  padding: 0 20px;
+}
+
+.landpage {
+  padding: 50px 40px;
+}
+
+.landpage-tag {
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.landpage-heading {
+  font-weight: 500;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.landpage-text {
+  width: 500px;
+  line-height: 1.4;
+  margin-bottom: 35px;
+}
+
+.landpage-action-btn {
+  padding: 10px 20px;
+  background-color: #5783db;
+  border: .5px solid black;
+  color: white;
+  font-weight: 500;
+  letter-spacing: -.5px;
+}
+
+.time {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+}
+
+.refresh {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+}
+
+.refresh-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.3rem;
+}
+
+.refresh-btn:hover {
+ cursor: pointer; 
+}
+
+.refresh-btn:active > i {
+  color: #606060;
+}
+
+#current-time {
+  margin-left: 5px;
+}
