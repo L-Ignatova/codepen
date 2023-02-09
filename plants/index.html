@@ -9,6 +9,7 @@
 </head>
 <body>
   <main>
+<!--   LANDING PAGE   -->
     <nav>
       <ul>
         <li>Home</li>
@@ -20,6 +21,7 @@
     <h4>Taking care of your plants has never been easier with Plantae</h4>
     <button>Find plants</button>
     
+<!--   MY PLANTS   -->
     <section class="my-plants">
       <h1>My plants<span>3</span></h1>
       <div class="plant-actions">
@@ -57,7 +59,7 @@
           <img src="https://images.pexels.com/photos/2904979/pexels-photo-2904979.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="">
           <div class="content">
             <div class="content-names">
-              <h3>Silver vase <span><i class="fa-regular fa-circle-check"></i></span></h3>
+              <h3>Silver vase <span><i class="fa-solid fa-triangle-exclamation active"></i></span></h3>
               <h5>Aechmea fatsiata</h5>
             </div>
             <div class="content-actions">
@@ -67,6 +69,98 @@
         </div>
       </div>
     </section>
+    
+<!--   BROWSE PLANTS   -->
+    <section class="browse-plants">
+      <h1>All plants</h1>
+      <div class="plant-cards">
+        <div class="plant-card">
+          <img src="https://images.pexels.com/photos/2123482/pexels-photo-2123482.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="">
+          <div class="content">
+            <div class="content-names">
+              <h3>Silver vase</h3>
+              <h5>Aechmea fatsiata</h5>
+            </div>
+            <div class="content-actions">
+              <button class="secondary">Add plant</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="plant-card">
+          <img src="https://images.pexels.com/photos/1022922/pexels-photo-1022922.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="">
+          <div class="content">
+            <div class="content-names">
+              <h3>Silver vase</h3>
+              <h5>Aechmea fatsiata</h5>
+            </div>
+            <div class="content-actions">
+              <button id="some" class="secondary">Add plant</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <section class="drawer open">
+    <div class="overlay"></div>
+    <div class="drawer-content">
+      <button id="close" class="tertiary"><i class="fa-solid fa-arrow-left"></i> Plants</button>
+      <div class="drawer-content-plant">
+        <div class="content-names">
+          <h3>Aechmea fatsiata</h3>
+          <h5>(a.k.a. Silver vase)</h5>
+        </div>
+        <div class="img-and-watering">
+          <div class="img">
+            <img src="https://images.pexels.com/photos/1022922/pexels-photo-1022922.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="">
+            </div>
+          <div class="watering">
+            <p class="daily-water">Water: every 3 days</p>
+            <p class="last-watering">Days since last watering: <span>2</span></p>
+          </div>
+        </div>
+        
+        <div class="plant-details">
+          <div class="plant-detail">
+            <i class="fa-solid fa-temperature-three-quarters"></i>
+            <p>10°C - 25°C</p>
+          </div>
+          <div class="plant-detail">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Brazil</p>
+            <p>(tropical)</p>
+          </div>
+          <div class="plant-detail">
+            <i class="fa-solid fa-sun"></i>
+            <p>Bright light</p>
+            <p>(tolerated: diffused)</p>
+          </div>
+          <div class="plant-detail">
+            <i class="fas fa-stethoscope"></i>
+            <p>N/A</p>
+          </div>
+          <div class="plant-detail">
+            <i class="fas fa-bug"></i>
+            <p>N/A</p>
+          </div>
+        </div>
+        <div class="more-details">
+          <div class="more-detail">
+            <i class="fa-solid fa-water"></i>
+            <p>Keep moist between watering. Can be a bit dry between watering</p>
+          </div>
+          <div class="more-detail">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>Possible insects and disease: Mealy bug, Aphid, Thrips</p>
+          </div>
+        </div>
+        <div class="more-actions">
+          <button class="water-plant">Water plant</button>
+          <button class="tertiary">Edit</button>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
